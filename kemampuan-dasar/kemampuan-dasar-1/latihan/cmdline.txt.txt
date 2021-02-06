@@ -1,0 +1,20 @@
+1. mkdir latihan -> membuat direktori latihan, hasil folder latihan
+2. cd latihan -> mengarahkan ke folder latihan, hasil pindah ke direktori latihan
+3. dir -> melihat isi direktori misal di dalam folder latihan, tampil isi dari direktori
+4. call coba.txt -> memanggil / membuka file coba.txt, file coba.txt terbuka di notepad
+5. copy coba.txt praxis -> menduplikat file coba.txt menjadi praxis, terdapat file praxis
+6. date /t -> menampilkan tanggal misal 18/1/2021
+7. del praxis -> menghapus file praxis
+8. rename coba.txt try.txt -> merubah nama file dari coba menjadi try
+9. ipconfig -> melihat konfigurasi ip pada pc/laptop
+10. ping -> untuk mengecek koneksi pada suatu host misal ping 8.8.8.8
+11. print ->
+12. help -> memberikan informasi
+13. get-process -> menginformasikan data penggunaan
+14. get-service -> melihat aplikasi yang sedang berjalan dan stop
+15. get-command -> melihat perintah apa saja yang ada dalam perintah cmd
+16. get-command -module nettcpip -name*ip* -> melihat perintah apa saja yang ada dalam IP
+17. get-netipconfiguration -> melihat ip address
+18. get-command *-*firewall* -> melihat beberapa command dari firewall
+19. write-host "( .. )" -> menampilkan perintah sederhana
+20. "Get-ExecutionPolicy -> mengetahui kebijakan eksekusi apa yang digunakan sebelum menjalankan skrip

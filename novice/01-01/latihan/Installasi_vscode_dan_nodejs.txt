@@ -3,3 +3,7 @@ Installasi visual studio code
 2. Jalankan installer (VSCodeUserSetup-{version}.exe), tunggu beberapa menit
 3. Secara default akan terinstall di C:\users\{username}\AppData\Local\Programs\Microsoft VS Code.
 
+Installasi node.js
+1. Buka halaman download Node.js dan klik tautan unduhan untuk Windows Installer
+2. Jalankan installer
+3. Ikuti panduannya seperti menginstal aplikasi lainnya pada Windows

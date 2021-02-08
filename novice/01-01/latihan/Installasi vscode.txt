@@ -1,0 +1,5 @@
+Installasi visual studio code
+1. Download visual studio code https://code.visualstudio.com/Download
+2. Jalankan installer (VSCodeUserSetup-{version}.exe), tunggu beberapa menit
+3. Secara default akan terinstall di C:\users\{username}\AppData\Local\Programs\Microsoft VS Code.
+

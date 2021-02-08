@@ -1,0 +1,10 @@
+Plugin:
+1. Eslint -> pedeteksi error js
+2. vetur -> heightligth vuejs
+3. bracket pair color -> kurung kurawal berwarna
+4. prettier -> auto rapi
+
+Buat menampilkan 
+Nama:
+Alamat:
+Pendidikan terakhir:

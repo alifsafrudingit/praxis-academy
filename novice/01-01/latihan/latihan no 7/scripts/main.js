@@ -61,7 +61,7 @@
 // };
 
 // Adding an image changer
-let myImage = document.querySelector("img");
+let myImage = document.querySelector("img");  
 
 myImage.onclick = function () {
   let mySrc = myImage.getAttribute("src");

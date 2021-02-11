@@ -1,13 +1,14 @@
 // Kasus 1 The Fortune Teller
+const jobTitle = document.getElementById("jobTitle").value;
+const geoLocation = document.getElementById("geoLocation").value;
+const partnerName = document.getElementById("partnerName").value;
+const numChild = document.getElementById("numbChild").value;
+
 const tellFortune = (jobTitle, geoLocation, partnerName, numChild) => {
   console.log(
     `You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numChild} kids`
   );
 };
-
-tellFortune("Front End Dev", "Amerika", "Miss X", 3);
-tellFortune("UI/UX", "Indonesia", "Miss Y", 4);
-tellFortune("BackEnd Dev", "Australia", "Miss Z", 5);
 
 // Kasus 2 The Puppy Age Calculator
 const calculateDogAge = (peopleAge) => {
@@ -63,10 +64,10 @@ const celsiusToFahrenheit = (celcius) => {
   let toF = (9 / 5) * celcius + 32;
   console.log(`${celcius} ?C is ${toF} ?F`);
 };
-const fahrenheitToCelcius = (fahrenheit) => {
+const fahrenheitToCelsius = (fahrenheit) => {
   let toC = ((fahrenheit - 32) * 5) / 9;
   console.log(`${fahrenheit} ?F is ${toC} ?C`);
 };
 
 celsiusToFahrenheit(100);
-fahrenheitToCelcius(32);
+fahrenheitToCelsius(32);

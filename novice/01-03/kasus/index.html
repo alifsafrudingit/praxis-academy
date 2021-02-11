@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-main>
+          <v-container>
+            <v-row>
+              <!-- Kasus 1 Fortune Teller -->
+              <v-col v-for="n in 1" :key="n" :cols="n === 1 ? 6 : 6">
+                <v-card class="pa-2" tile outlined>
+                  <h2>Kasus 1 Fortune Teller</h2>
+                  <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-text-field
+                      id="jobTitle"
+                      v-model="name"
+                      :rules="nameRules"
+                      label="Job Title"
+                    ></v-text-field>
+
+                    <v-text-field
+                      id="geoLocaltion"
+                      v-model="name"
+                      :rules="nameRules"
+                      label="Geographic Location"
+                      required
+                    ></v-text-field>
+
+                    <v-text-field
+                      id="partnerName"
+                      v-model="name"
+                      :rules="nameRules"
+                      label="Partner Name"
+                      required
+                    ></v-text-field>
+
+                    <v-text-field
+                      id="numbChild"
+                      v-model="number"
+                      :rules="numberRules"
+                      label="Number Child"
+                      required
+                    ></v-text-field>
+
+                    <v-btn color="success" class="mr-4" @click="execute">
+                      Execute
+                    </v-btn>
+
+                    <v-btn color="warning" class="mr-4" @click="reset">
+                      Reset Form
+                    </v-btn>
+                  </v-form>
+                </v-card>
+              </v-col>
+
+              <!-- Kasus 2 The Puppy Age Calculator  -->
+              <v-col v-for="n in 1" :key="n" :cols="n === 1 ? 6 : 6">
+                <v-card class="pa-2" tile outlined>
+                  <h2>Kasus 2 The Puppy Age Calculator</h2>
+                  <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-text-field
+                      v-model="number"
+                      :rules="numberRules"
+                      label="People Age"
+                      required
+                    ></v-text-field>
+
+                    <v-btn color="success" class="mr-4" @click="execute">
+                      Execute
+                    </v-btn>
+
+                    <v-btn color="warning" class="mr-4" @click="reset">
+                      Reset Form
+                    </v-btn>
+                  </v-form>
+                </v-card>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col v-for="n in 1" :key="n" :cols="n === 1 ? 6 : 6">
+                <v-card class="pa-2" tile outlined>
+                  <h2>Kasus 3 The Lifetime Supply Calculator</h2>
+                  <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-text-field
+                      v-model="number"
+                      :rules="numberRules"
+                      label="Age"
+                      required
+                    ></v-text-field>
+
+                    <v-text-field
+                      v-model="number"
+                      :rules="numberRules"
+                      label="Amount Per Day"
+                      required
+                    ></v-text-field>
+
+                    <v-btn color="success" class="mr-4" @click="execute">
+                      Execute
+                    </v-btn>
+
+                    <v-btn color="warning" class="mr-4" @click="reset">
+                      Reset Form
+                    </v-btn>
+                  </v-form>
+                </v-card>
+              </v-col>
+              <v-col v-for="n in 1" :key="n" :cols="n === 1 ? 6 : 6">
+                <v-card class="pa-2" tile outlined>
+                  <h2>Kasus 4 The Geometrizer</h2>
+                  <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-text-field
+                      v-model="number"
+                      :rules="numberRules"
+                      label="Radius"
+                      required
+                    ></v-text-field>
+
+                    <v-btn color="success" class="mr-4" @click="execute">
+                      Execute
+                    </v-btn>
+
+                    <v-btn color="warning" class="mr-4" @click="reset">
+                      Reset Form
+                    </v-btn>
+                  </v-form>
+                </v-card>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col v-for="n in 1" :key="n" :cols="n === 1 ? 6 : 6">
+                <v-card class="pa-2" tile outlined>
+                  <h2>Kasus 5 Temperature Converter</h2>
+                  <v-form ref="form" v-model="valid" lazy-validation>
+                    <v-text-field
+                      v-model="number"
+                      :rules="numberRules"
+                      label="Celsius to Fahrenheit"
+                      required
+                    ></v-text-field>
+
+                    <v-text-field
+                      v-model="number"
+                      :rules="numberRules"
+                      label="Fahrenheit to Celsius"
+                      required
+                    ></v-text-field>
+
+                    <v-btn color="success" class="mr-4" @click="execute">
+                      Execute
+                    </v-btn>
+
+                    <v-btn color="warning" class="mr-4" @click="reset">
+                      Reset Form
+                    </v-btn>
+                  </v-form>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-main>
+      </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        vuetify: new Vuetify(),
+      });
+    </script>
+  </body>
+</html>

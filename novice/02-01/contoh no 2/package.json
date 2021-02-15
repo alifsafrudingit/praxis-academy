@@ -1,0 +1,17 @@
+{
+  "name": "functional_programming",
+  "version": "1.0.0",
+  "description": "membuat library functional programming",
+  "main": "main.js",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "ramda": "^0.27.1",
+    "underscore": "^1.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

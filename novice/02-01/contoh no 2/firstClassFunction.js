@@ -16,9 +16,7 @@ let meetups = [
   },
 ];
 
-let isActive = (meetup) => {
-  return meetup.isActive;
-};
+//  y
 console.log(meetups.filter(isActive));
 
 let byName = (name) => {
